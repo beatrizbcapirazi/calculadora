@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparação Calórica</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="header-section">
+        <h1>Compara Aí</h1>
+        <p class="sub-title">a sua calculadora saudável</p>
+    </div>
+
+    <div class="container">
+        <div class="input-section">
+            <label for="food-select">Selecione:</label>
+            <select id="food-select">
+                <option value="selecione">Selecione um dos itens abaixo</option>
+                <option value="batata">McFritas Grande</option>
+                <option value="milkshake">McShake Morango</option>
+                <option value="mm">Pacote de M&M 148g</option>
+                <option value="combo">McLanche Feliz</option>
+                <option value="coxinha">10 coxinhas de Frango do Ragazzo</option>
+                <option value="ruffles">Ruffles sabor original</option> 
+            </select>
+        </div>
+        <button class="calculate-button" onclick="calculateCalories()">Calcular</button>
+        <div class="result" id="result"></div>
+        <img id="item-image" src="" alt="Imagem do item" class="item-image">
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <footer>
+        <p>©2024 Beatriz Capirazi. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
