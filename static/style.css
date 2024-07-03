@@ -1,0 +1,87 @@
+/* Estilo do corpo da página */
+body {
+    background-color: #f0f8ff; /* Azul claro */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo da faixa cinza com imagem de fundo */
+.header-section {
+    background-image: url('prato.jpeg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white; /* Cor do texto sobre a imagem */
+    padding: 50px 0; /* Espaçamento interno superior e inferior */
+    font-size: 24px; /* Tamanho da fonte */
+    position: relative; /* Permite posicionar elementos filhos relativamente */
+}
+
+/* Estilo para o título "Compara Aí" */
+.header-section h1 {
+    background-color: #808080; /* Cor de fundo do título */
+    padding: 20px 0; /* Espaçamento interno superior e inferior do título */
+    margin-top: 0; /* Remover margem superior padrão */
+}
+
+/* Estilo para o subtítulo abaixo do título */
+.sub-title {
+    font-style: italic; /* Define o texto em itálico */
+    font-size: 16px; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaço abaixo do subtítulo */
+    position: absolute; /* Posicionamento absoluto dentro do elemento pai */
+    bottom: 0; /* Alinha o texto na parte inferior */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição para o centro */
+    background-color: #808080; /* Cor de fundo do subtítulo para corresponder ao título */
+    width: 100%; /* Ocupa toda a largura do elemento pai */
+    padding: 10px 0; /* Espaçamento interno superior e inferior */
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+    z-index: 1; /* Garante que o subtítulo fique acima da imagem de fundo */
+}
+
+/* Estilo do conteúdo da página */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Estilo do botão */
+.calculate-button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.calculate-button:hover {
+    background-color: #45a049; /* Verde mais escuro */
+}
+
+/* Estilo da seção de resultados */
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Estilo da imagem do item */
+.item-image {
+    display: none; /* Esconder a imagem inicialmente */
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    position: fixed; /* Mantém o footer fixo na parte inferior da tela */
+    width: 100%; /* Garante que o footer ocupe toda a largura da tela */
+    background-color: #000; /* Define a cor de fundo do footer */
+    color: white; /* Define a cor do texto do footer */
+    text-align: center; /* Alinha o texto no centro do footer */
+    padding: 10px 0; /* Adiciona espaço interno ao footer */
+    bottom: 0; /* Posiciona o footer na parte inferior da tela */
+}
