@@ -8,7 +8,7 @@ body {
 
 /* Estilo da faixa cinza com imagem de fundo */
 .header-section {
-    background-image: url('prato.jpeg');
+    background-image: url('../static/prato.jpeg'); /* Caminho ajustado */
     background-size: cover;
     background-position: center;
     text-align: center;
